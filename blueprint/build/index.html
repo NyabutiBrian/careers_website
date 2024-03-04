@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Momanyi Brian" />
+    <meta name="description" content="Explore opportunities and meet your aspirations with Us! Open Jobs. Connecting job seekers with exciting roles offered by leading organizations." />
+    <meta property="title" content="Open Jobs Website" />
+
+    <link rel="canonical" href="https://open-jobs-v2.vercel.app" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    
+    <title>Kenya Jobs Hub | Find Internships & Scholarships | Open Jobs</title>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a9cdceb046.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <nav class="shadow-xl sticky top-0 z-50">
+        <div class="navbar bg-cream max-w-7xl mx-auto">
+            <!-- Nav-item-left -->
+            <div class="navbar-start text-secondary font-semibold">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-cream rounded-box w-52">
+                        <li><a href="./index.html" class="text-primary">Home</a></li>
+                        <li><a href="./pages.html">Jobs</a></li>
+                        <li><a href="./pages.html">Internships</a></li>
+                        <li><a href="./pages.html">Scholarships</a></li>
+                        <li>
+                            <a href="">More</a>
+                            <ul class="p-2">
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="#contact-us">Contact Us</a></li>
+                                <li><a href="#">Forums</a></li>
+                                <li><a href="#">Partnerships</a></li>
+                                <li><a href="#">Advice</a></li>
+                                <li><a href="#">Training</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl text-primary">OPEN <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">JOBS</span></a>
+            </div>
+
+            <!-- Nav-item-right -->
+            <div class="navbar-center hidden lg:flex text-secondary font-semibold">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="./index.html" class="text-primary">Home</a></li>
+                    <li><a href="./pages.html">Jobs</a></li>
+                    <li><a href="./pages.html">Internships</a></li>
+                    <li><a href="./pages.html">Scholarships</a></li>
+                    <li>
+                        <details>
+                            <summary>More</summary>
+                            <ul class="p-2 bg-cream">
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="#contact-us">Contact Us</a></li>
+                                <li><a href="#">Forums</a></li>
+                                <li><a href="#">Partnerships</a></li>
+                                <li><a href="#">Advice</a></li>
+                                <li><a href="#">Training</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <form method="post" class="flex flex-row items-center justify-center space-x-4 bg-cream text-darky rounded-3xl py-1 px-4">
+                    <input type="text" class="input input-xs w-full max-w-xs font-normal italic text-xs sm:text-sm bg-whity" placeholder="Search" required/>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass-location fa-shake text-darky text-lg"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Colored hr -->
+        <div class="flex flex-row w-full items-center">
+            <div class="bg-primary h-0.5 md:h-1 w-1/4"></div>
+            <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
+            <div class="bg-primary h-0.5 md:h-1 w-1/4"></div>
+            <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4">
+        <!-- Header -->
+        <header>
+            <div class="py-8 grid lg:grid-cols-2 gap-4">
+                <!-- Left -->
+                <div class="flex flex-col space-y-4">
+                    <div class="flex flex-row justify-evenly xl:justify-between">
+                        <img src="./assets/images/open-jobs-3.jpeg" alt="" class="w-[200px] sm:w-[280px] md:w-[350px] lg:w-[240px] xl:w-[300px] rounded-3xl shadow-2xl">
+                        <img src="./assets/images/open-jobs-2.jpeg" alt="" class="w-[200px] sm:w-[280px] md:w-[350px] lg:w-[240px] xl:w-[300px] rounded-3xl shadow-2xl">
+                    </div>
+                    <div class="bg-gradient-to-r from-cyan-600 to-blue-500 rounded-3xl py-6 px-6 sm:px-8 shadow-2xl">
+                        <p class="text-whity text-sm md:text-base">
+                            Discover exciting job opportunities tailored just for you. 
+                            including internships, scholarships, and rewarding positions 
+                            across diverse industries We are Bridging the Gap, 
+                            Opportunities Meet Aspirations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="bg-whity rounded-3xl px-6 py-4 shadow-2xl">
+                    <!-- Top -->
+                    <div class="flex items-center justify-evenly py-4">
+                        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 text-whity font-semibold px-8 py-2 rounded-3xl shadow-lg">
+                            <a href="#">Popular</a>
+                        </div>
+                        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 text-whity font-semibold px-8 py-2 rounded-3xl shadow-lg">
+                            <a href="#">Recent</a>
+                        </div>
+                    </div>
+
+                    <!-- Bottom -->
+                    <div class="py-2">
+                        <!-- Post 1 -->
+                        <div class="py-1">
+                            <a href="./article.html" class="flex items-center justify-center lg:justify-start space-x-4">
+                                <div class="p-12 sm:p-10 rounded-full bg-center bg-contain shadow-2xl" style="background-image: url(./assets/images/un.png)">
+                                </div>
+                                <div class="flex flex-col justify-between">
+                                    <h6 class="text-secondary font-semibold text-lg">Project Officer Health, Sanitation and Hygiene</h6>
+                                    <div class="flex text-xs space-x-3 text-secondary">
+                                        <p>by <span class="text-primary font-semibold italic">Elijah</span></p>
+                                        <p>January 17, 2024</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="py-4">
+                                <hr class="bg-secondary h-[1px] max-w-xs lg:max-w-md mx-auto">
+                            </div>
+                        </div>
+
+                        <!-- Post 2 -->
+                        <div class="py-1">
+                            <a href="./article.html" class="flex items-center justify-center lg:justify-start space-x-4">
+                                <div class="p-12 sm:p-10 rounded-full bg-center bg-contain" style="background-image: url(./assets/images/un.png)">
+                                </div>
+                                <div class="flex flex-col justify-between">
+                                    <h6 class="text-secondary font-semibold text-lg">Project Officer Health, Sanitation and Hygiene</h6>
+                                    <div class="flex text-xs space-x-3 text-secondary">
+                                        <p>by <span class="text-primary font-semibold italic">Elijah</span></p>
+                                        <p>January 17, 2024</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="py-4">
+                                <hr class="bg-secondary h-[1px] max-w-xs lg:max-w-md mx-auto">
+                            </div>
+                        </div>
+
+                        <!-- Post 3 -->
+                        <div class="py-1">
+                            <a href="./article.html" class="flex items-center justify-center lg:justify-start space-x-4">
+                                <div class="p-12 sm:p-10 rounded-full bg-center bg-contain" style="background-image: url(./assets/images/un.png)">
+                                </div>
+                                <div class="flex flex-col justify-between">
+                                    <h6 class="text-secondary font-semibold text-lg">Project Officer Health, Sanitation and Hygiene</h6>
+                                    <div class="flex text-xs space-x-3 text-secondary">
+                                        <p>by <span class="text-primary font-semibold italic">Elijah</span></p>
+                                        <p>January 17, 2024</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="py-4">
+                                <hr class="bg-secondary h-[1px] max-w-xs lg:max-w-md mx-auto">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Categories + Jobs -->
+        <section>
+            <div class="py-4">
+                <div class="text-center">
+                    <h4 class="text-secondary font-semibold text-xl">Categories</h4>
+                </div>
+
+                <!-- Categories -->
+                <div class="max-w-sm sm:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto">
+                    <div class="categories-carousel py-4 flex flex-row justify-evenly px-4 text-xs sm:text-sm  shadow-2xl rounded-full">
+                        <a href="./pages.html" class="border font-semibold odd:border-primary even:border-secondary odd:text-primary even:text-secondary py-2 px-3 rounded-3xl shadow-xl mx-2">All Categories</a>
+                        <a href="./pages.html" class="border font-semibold odd:border-primary even:border-secondary odd:text-primary even:text-secondary py-2 px-3 rounded-3xl shadow-xl mx-2">Marketing</a>
+                        <a href="./pages.html" class="border font-semibold odd:border-primary even:border-secondary odd:text-primary even:text-secondary py-2 px-3 rounded-3xl shadow-xl mx-2">Software Engineering</a>
+                        <a href="./pages.html" class="border font-semibold odd:border-primary even:border-secondary odd:text-primary even:text-secondary py-2 px-3 rounded-3xl shadow-xl mx-2">Nurse</a>
+                        <a href="./pages.html" class="border font-semibold odd:border-primary even:border-secondary odd:text-primary even:text-secondary py-2 px-3 rounded-3xl shadow-xl mx-2">Financial Analyst</a>
+                        <a href="./pages.html" class="border font-semibold odd:border-primary even:border-secondary odd:text-primary even:text-secondary py-2 px-3 rounded-3xl shadow-xl mx-2">Mechanic</a>
+                        <a href="./pages.html" class="border font-semibold odd:border-primary even:border-secondary odd:text-primary even:text-secondary py-2 px-3 rounded-3xl shadow-xl mx-2">Farmer</a>
+                    </div>
+                </div>
+
+                <!-- Jobs -->
+                <div class="py-8 grid lg:grid-cols-2 gap-4">
+
+                    <!-- Left -->
+                    <div class="bg-whity rounded-3xl px-6 py-4 shadow-2xl">
+                        <div class="text-center py-4">
+                            <h4 class="text-secondary font-semibold text-xl">Latest picks for you</h4>
+                        </div>
+
+                        <!-- Post 1 -->
+                        <div class="py-3">
+                            <a href="#" class="flex items-center justify-center lg:justify-start space-x-4 shadow-2xl rounded-3xl">
+                                <div class="px-14 py-20 sm:p-20 rounded-s-3xl bg-center bg-cover shadow-2xl" style="background-image: url(./assets/images/un.png)">
+                                </div>
+                                <div class="flex flex-col justify-evenly">
+                                    <div>
+                                        <h6 class="text-secondary font-semibold text-md">Project Officer Health, Sanitation and Hygiene</h6>
+                                    </div>
+
+                                    <div class="py-1 flex items-center space-x-2 text-primary text-xs">
+                                        <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                                        <p>Nairobi, Kenya</p>
+                                    </div>
+        
+                                    <div class="py-1 text-secondary font-semibold text-xs flex">
+                                        <p class="border border-secondary py-2 px-4 rounded-3xl">Full Time</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Post 2 -->
+                        <div class="py-3">
+                            <a href="#" class="flex items-center justify-center lg:justify-start space-x-4 shadow-2xl rounded-3xl">
+                                <div class="px-14 py-20 sm:p-20 rounded-s-3xl bg-center bg-cover shadow-2xl" style="background-image: url(./assets/images/un.png)">
+                                </div>
+                                <div class="flex flex-col justify-evenly">
+                                    <div>
+                                        <h6 class="text-secondary font-semibold text-md">Project Officer Health, Sanitation and Hygiene</h6>
+                                    </div>
+
+                                    <div class="py-1 flex items-center space-x-2 text-primary text-xs">
+                                        <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                                        <p>Nairobi, Kenya</p>
+                                    </div>
+        
+                                    <div class="py-1 text-secondary font-semibold text-xs flex">
+                                        <p class="border border-secondary py-2 px-4 rounded-3xl">Full Time</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Post 3 -->
+                        <div class="py-3">
+                            <a href="#" class="flex items-center justify-center lg:justify-start space-x-4 shadow-2xl rounded-3xl">
+                                <div class="px-14 py-20 sm:p-20 rounded-s-3xl bg-center bg-cover shadow-2xl" style="background-image: url(./assets/images/un.png)">
+                                </div>
+                                <div class="flex flex-col justify-evenly">
+                                    <div>
+                                        <h6 class="text-secondary font-semibold text-md">Project Officer Health, Sanitation and Hygiene</h6>
+                                    </div>
+
+                                    <div class="py-1 flex items-center space-x-2 text-primary text-xs">
+                                        <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                                        <p>Nairobi, Kenya</p>
+                                    </div>
+        
+                                    <div class="py-1 text-secondary font-semibold text-xs flex">
+                                        <p class="border border-secondary py-2 px-4 rounded-3xl">Full Time</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Right -->
+                    <div class="bg-whity rounded-3xl px-6 py-4 shadow-2xl">
+                        <div class="py-8">
+                            <!-- Job Post -->
+                            <div class="max-w-xl mx-auto mb-12 border-t-4 xl:border-t-0 xl:border-l-4 even:border-gold odd:border-primary py-6 px-8 rounded-3xl shadow-2xl">
+                                <div class="my-2 px-6 py-12 rounded-3xl bg-center bg-cover shadow-2xl" style="background-image: url(./assets/images/un.png); position: relative;">
+                                    <div class="rounded-3xl" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.402);"></div>
+                                    <div style="position: relative; z-index: 1;">
+                                        <h2 class="text-whity text-2xl font-semibold">Project Officer Health, Sanitation and Hygiene</h2>
+                                        <div class="py-2 flex items-center space-x-4 text-whity">
+                                            <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                                            <p>Nairobi, Kenya</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="py-2 text-secondary font-semibold text-xs flex">
+                                    <p class="border border-secondary py-2 px-4 rounded-3xl">Full Time</p>
+                                </div>
+    
+                                <div class="py-2 text-secondary/80 italic text-sm">
+                                    <h6 class='text-primary font-semibold italic py-2'>Description</h6>
+                                    <p>
+                                        With over 70 years of experience, our focus 
+                                        is on helping the most vulnerable children 
+                                        overcome poverty and experience fullness...
+                                    </p>
+                                </div>
+
+                                <div class="py-2 text-secondary/80 italic text-sm">
+                                    <h6 class='text-primary font-semibold italic py-2'>Requirements</h6>
+                                    <p>
+                                        With over 70 years of experience, our focus 
+                                        is on helping the most vulnerable children 
+                                        overcome poverty and experience fullness...
+                                    </p>
+                                </div>
+
+                                <div class="py-2 text-secondary/80 italic text-xs font-semibold">
+                                  <h6>*More Information about Application click the link to job post below:</h6>
+                                </div>
+    
+                                <div class="py-4 flex flex-row justify-between text-secondary">
+                                    <div class="flex flex-row text-xs space-x-2">
+                                        <p>by <span class="text-primary font-semibold italic">Elijah</span></p>
+                                        <p>January 17, 2024</p>
+                                    </div>
+                                    <div class="text-whity font-semibold text-xs transition duration-200 transform hover:scale-110">
+                                        <a href="./article.html" class="bg-gradient-to-r from-cyan-500 to-blue-500 focus:outline-none focus:ring focus:ring-cyan-300 py-2 px-4 rounded-3xl">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section class="py-8 scroll-m-12" id="contact-us">
+            <div class="bg-whity rounded-3xl shadow-2xl px-8 py-8 md:py-12">
+
+                <!-- Top -->
+                <div class="max-w-xl mx-auto text-center py-4">
+                    <h4 class="text-secondary font-semibold text-4xl">Get In Touch</h4>
+                    <p class="py-2 text-secondary font-light">
+                        We are available to offer our support and respond 
+                        to inquiries that you may have. We are excitedly 
+                        anticipating hearing from you.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Left -->
+                    <div class="flex flex-col text-secondary px-4 sm:px-16 py-8 rounded-3xl shadow-2xl">
+                        <h5 class="text-secondary font-semibold text-2xl text-center">Reach Out to <span class="text-primary">Open Jobs</span></h5>
+                        <p class="py-4 text-secondary font-light text-sm text-justify">
+                            Looking for something specific? See below for contacts 
+                            related to your inquiry. If you don’t find what you need, 
+                            fill out our contact form.
+                        </p>
+                        <p class="py-2 text-primary font-semibold text-sm">GENERAL INQUIRIES</p>
+                        <p class="text-secondary font-light text-sm">(+254) 700 013 897</p>
+                        <p class="class="text-secondary font-light text-sm"">openjobs@gmail.com</p>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="px-4 sm:px-16 py-8 rounded-3xl shadow-2xl">
+                        <form method="post">
+                            <div>
+                                <label class="form-control w-full max-w-2xl py-2">
+                                    <div class="label">
+                                        <span class="label-text text-secondary">Name</span>
+                                    </div>
+                                    <input type="text" placeholder="You can call me..." class="input input-bordered w-full italic shadow-md text-secondary text-sm bg-whity" required />
+                                </label>
+
+                                <label class="form-control w-full max-w-2xl py-2">
+                                    <div class="label">
+                                        <span class="label-text text-secondary">Email</span>
+                                    </div>
+                                    <input type="email" placeholder="You can reach me at..." class="input input-bordered w-full italic shadow-md text-secondary text-sm bg-whity" required />
+                                </label>
+
+                                <label class="form-control w-full max-w-2xl py-2">
+                                    <div class="label">
+                                        <span class="label-text text-secondary">Message</span>
+                                    </div>
+                                    <textarea class="textarea textarea-bordered h-24 italic shadow-md text-secondary text-sm bg-whity" placeholder="I would like to say that..." required></textarea>
+                                </label>
+
+                                <label class="form-control w-full max-w-2xl py-6">
+                                    <div class="text-whity font-semibold text-end">
+                                        <button value="submit" class="bg-gradient-to-r from-cyan-500 to-blue-500 focus:outline-none focus:ring focus:ring-cyan-300 py-2 px-4 rounded-3xl transition duration-200 transform hover:scale-110">Submit</button>
+                                    </div>
+                                </label>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto px-2 pt-8 pb-5">
+                <div class="flex flex-col items-center xl:flex-row xl:justify-between">
+                    <div class="mb-6 xl:mb-0">
+                        <a href="#">
+                            <img src="./assets/images/open-jobs-1.jpeg" class="h-52 rounded-3xl" alt="footer Logo" />
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-primary uppercase">Resources</h2>
+                            <ul class="text-secondary font-medium">
+                                <li class="mb-4">
+                                    <a href="./index.html" class="hover:underline">Home</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="./pages.html" class="hover:underline">Jobs</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="./about.html" class="hover:underline">About Open Jobs</a>
+                                </li>
+                                <li>
+                                    <a href="#contact-us" class="hover:underline">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-primary uppercase">Follow us</h2>
+                            <ul class="text-secondary font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline ">Facebook</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline ">Instagram</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Tiktok</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-primary uppercase">Legal</h2>
+                            <ul class="text-secondary font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colored hr -->
+                <div class="flex flex-row w-full items-center my-6 lg:my-8">
+                    <div class="bg-primary h-0.5 md:h-1 w-1/4"></div>
+                    <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
+                    <div class="bg-primary h-0.5 md:h-1 w-1/4"></div>
+                    <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
+                </div>
+                
+                <div class="flex items-center flex-col sm:flex-row sm:justify-between">
+                    <span class="text-sm text-secondary font-medium italic sm:text-center">© 2024 <a href="#" class="hover:underline">Open
+                            Jobs™</a>. All Rights Reserved.
+                    </span>
+                    <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook text-secondary hover:text-primary"></i>
+                            <span class="sr-only">Facebook page</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram text-secondary hover:text-primary"></i>
+                            <span class="sr-only">Instagram page</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter text-secondary hover:text-primary"></i>
+                            <span class="sr-only">Twitter page</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok text-secondary hover:text-primary"></i>
+                            <span class="sr-only">Tiktok page</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.categories-carousel').slick({
+                // slidesToShow: 3,
+                slidesToScroll: 2,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                // dots: true,
+                // arrows: true,
+                variableWidth: true,
+            });
+        });
+    </script>
+</body>
+</html>

@@ -9,7 +9,6 @@
     - [Figma Design](#figma-design)
     - [HTML + CSS + Tailwind Development](#html-+-css+-tailwind-development)
     - [React Development](#react-development)
-    - [Django Development](#django-development)
 - [Useful Resources](#useful-resources)
 - [Author](#author)
 
