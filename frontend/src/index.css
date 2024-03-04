@@ -5,4 +5,9 @@
 body {
     min-height: 100dvh;
     background-color: #DFE3EE;
+    font-family: Poppins;
+}
+
+.grad-to-br {
+    background-image: linear-gradient(to bottom right, #0e7490, #1e3a8a);
 }

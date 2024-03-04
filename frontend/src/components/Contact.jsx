@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState } from 'react'
 
 function Contact() {
 
@@ -16,7 +15,7 @@ function Contact() {
         const messageValue = event.target.elements.message.value;
         const emailValue = event.target.elements.email.value;
 
-        fetch('https://open-jobs.onrender.com/openjobs/api/contactus/', {
+        fetch(import.meta.env.VITE_API_CONTACTUS, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -59,19 +58,19 @@ function Contact() {
     <section className="py-8 scroll-m-12" id="contact-us">
             <div className="bg-whity rounded-3xl shadow-2xl px-8 py-8 md:py-12">
             {successMessage &&
-                <div class="toast toast-bottom toast-end text-sm font-semibold italic z-50">
-                    <div class="alert alert-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div className="toast toast-bottom toast-end text-sm font-semibold italic z-50">
+                    <div className="alert alert-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         <span>You have a new Notification</span>
                     </div>
-                    <div class="alert alert-success text-whity">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <div className="alert alert-success text-whity">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         <span>{successMessage}</span>
                     </div>
                 </div>
             }
                 <div className="max-w-xl mx-auto text-center py-4">
-                    <h4 className="text-secondary font-semibold text-4xl">Get In Touch</h4>
+                    <h3 className="text-secondary font-semibold text-4xl">Get In Touch</h3>
                     <p className="py-2 text-secondary font-light">
                         We are available to offer our support and respond 
                         to inquiries that you may have. We are excitedly 
@@ -80,15 +79,15 @@ function Contact() {
                 </div>
                 <div className="grid lg:grid-cols-2 gap-8">
                     <div className="flex flex-col text-secondary px-4 sm:px-16 py-8 rounded-3xl shadow-2xl">
-                        <h5 className="text-secondary font-semibold text-2xl text-center">Reach Out to <span className="text-primary">Open Jobs</span></h5>
+                        <h5 className="text-secondary font-semibold text-2xl text-center">Reach Out to <span className="text-primary">Open Career</span></h5>
                         <p className="py-4 text-secondary font-light text-sm text-justify">
                             Looking for something specific? See below for contacts 
                             related to your inquiry. If you don’t find what you need, 
                             fill out our contact form.
                         </p>
                         <p className="py-2 text-primary font-semibold text-sm">GENERAL INQUIRIES</p>
-                        <p className="text-secondary font-light text-sm">(+254) 700 013 897</p>
-                        <p className="text-secondary font-light text-sm">openjobs@gmail.com</p>
+                        <p className="text-secondary font-light text-sm">(+254) 700 000 897</p>
+                        <p className="text-secondary font-light text-sm">opencareer@gmail.com</p>
                     </div>
                     <div className="px-4 sm:px-16 py-8 rounded-3xl shadow-2xl">
                         <form onSubmit={handleSubmit}>
@@ -117,7 +116,7 @@ function Contact() {
                                 {loading && <p className='text-xs italic '>Sending Message...</p>}
                                 <label className="form-control w-full max-w-2xl py-6">
                                     <div className="text-whity font-semibold text-end">
-                                        <button type='submit' value="submit" className="bg-gradient-to-r from-cyan-500 to-blue-500 focus:outline-none focus:ring focus:ring-cyan-300 py-2 px-4 rounded-3xl transition duration-200 transform hover:scale-110">Submit</button>
+                                        <button type='submit' value="submit" className="grad-to-br focus:outline-none focus:ring focus:ring-cyan-300 py-2 px-6 rounded-3xl transition duration-200 transform hover:scale-110">Submit</button>
                                     </div>
                                 </label>
 

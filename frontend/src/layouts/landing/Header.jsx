@@ -12,7 +12,7 @@ function Header() {
 
     useEffect(() => {
         // Fetch articles
-        fetch('https://open-jobs.onrender.com/openjobs/api/article/')
+        fetch(import.meta.env.VITE_API_ARTICLE)
             .then(response => response.json())
             .then(data => {
                 setArticles(data);
@@ -45,7 +45,7 @@ function Header() {
                     <div className='py-24 sm:py-36 md:py-48 rounded-3xl shadow-2xl bg-center bg-cover' style={{backgroundImage: `url(${hero5})`}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'></div>
                     <div className='py-24 sm:py-36 md:py-48 rounded-3xl shadow-2xl bg-center bg-cover' style={{backgroundImage: `url(${hero1})`}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'></div>
                 </div>
-                <div className="bg-gradient-to-r from-cyan-700 to-blue-900 rounded-3xl py-6 px-6 sm:px-8 shadow-2xl">
+                <div className="grad-to-br rounded-3xl py-6 px-6 sm:px-8 shadow-2xl">
                     <p className="text-whity text-sm md:text-base">
                         Discover exciting job opportunities tailored just for you. 
                         including internships, scholarships, and rewarding positions 
@@ -60,10 +60,10 @@ function Header() {
                     {/* Top */}
                     <div className="flex items-center justify-evenly py-4">
                         <div className="text-whity font-semibold">
-                            <button onClick={handlePopularClick} className='bg-gradient-to-r from-cyan-700 to-blue-900 px-8 py-2 rounded-3xl shadow-lg focus:outline-none focus:ring focus:ring-cyan-300 transition duration-200 transform hover:scale-110'>Popular</button>
+                            <button onClick={handlePopularClick} className='grad-to-br px-8 py-2 rounded-3xl shadow-lg focus:outline-none focus:ring focus:ring-cyan-300 transition duration-200 transform hover:scale-110'>Popular</button>
                         </div>
                         <div className="text-whity font-semibold">
-                            <button onClick={handleRecentClick} className='bg-gradient-to-r from-cyan-700 to-blue-900 px-8 py-2 rounded-3xl shadow-lg focus:outline-none focus:ring focus:ring-cyan-300 transition duration-200 transform hover:scale-110'>Recent</button>
+                            <button onClick={handleRecentClick} className='grad-to-br px-8 py-2 rounded-3xl shadow-lg focus:outline-none focus:ring focus:ring-cyan-300 transition duration-200 transform hover:scale-110'>Recent</button>
                         </div>
                     </div>
 
