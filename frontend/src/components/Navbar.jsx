@@ -41,7 +41,7 @@ function Navbar({activeLink}) {
                         </li>
                     </ul>
                 </div>
-                <Link to="/" className="btn btn-ghost text-xl text-primary">OPEN CAREER</Link>
+                <Link to="/" className="btn btn-ghost text-sm lg:text-xl text-primary">OPEN CAREER</Link>
             </div>
 
             {/* Nav-item-right */}
