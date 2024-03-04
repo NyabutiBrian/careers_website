@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 // import Contact from '../components/Contact'
 // import Footer from '../components/Footer'
 
-// import Header from '../layouts/landing/Header';
+import Header from '../layouts/landing/Header';
 // import CategoriesPost from '../layouts/landing/CategoriesPost'
 
 
@@ -17,12 +17,12 @@ function Landing() {
   return (
     <>
         <Navbar/>
-        {/* <main className="max-w-7xl mx-auto px-4">
+        <main className="max-w-7xl mx-auto px-4">
             <Header />
-            <CategoriesPost />
+            {/* <CategoriesPost />
             <Contact />
-            <Footer />
-        </main> */}
+            <Footer /> */}
+        </main>
     </>
   )
 }

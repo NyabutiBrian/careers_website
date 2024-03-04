@@ -1,7 +1,8 @@
 import React, { useState, useEffect  } from 'react';
-import openJobs3 from '../../assets/images/open-jobs-3.webp'
-import openJobs2 from '../../assets/images/open-jobs-2.webp'
 import { Link } from 'react-router-dom';
+
+import hero5 from '../../assets/images/hero1.webp'
+import hero1 from '../../assets/images/hero4.webp'
 
 function Header() {
 
@@ -40,11 +41,11 @@ function Header() {
         <div className="py-8 grid lg:grid-cols-2 gap-4">
             {/* Left */}
             <div className="flex flex-col space-y-4">
-                <div className="flex flex-row justify-evenly xl:justify-between">
-                    <img src={openJobs3} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Jobs' className="w-[200px] sm:w-[280px] md:w-[350px] lg:w-[240px] xl:w-[300px] rounded-3xl shadow-2xl"/>
-                    <img src={openJobs2} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Jobs' className="w-[200px] sm:w-[280px] md:w-[350px] lg:w-[240px] xl:w-[300px] rounded-3xl shadow-2xl"/>
+                <div className="grid grid-cols-2 gap-4">
+                    <div className='py-24 sm:py-36 md:py-48 rounded-3xl shadow-2xl bg-center bg-cover' style={{backgroundImage: `url(${hero5})`}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'></div>
+                    <div className='py-24 sm:py-36 md:py-48 rounded-3xl shadow-2xl bg-center bg-cover' style={{backgroundImage: `url(${hero1})`}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'></div>
                 </div>
-                <div className="bg-gradient-to-r from-cyan-600 to-blue-500 rounded-3xl py-6 px-6 sm:px-8 shadow-2xl">
+                <div className="bg-gradient-to-r from-cyan-700 to-blue-900 rounded-3xl py-6 px-6 sm:px-8 shadow-2xl">
                     <p className="text-whity text-sm md:text-base">
                         Discover exciting job opportunities tailored just for you. 
                         including internships, scholarships, and rewarding positions 
@@ -59,10 +60,10 @@ function Header() {
                     {/* Top */}
                     <div className="flex items-center justify-evenly py-4">
                         <div className="text-whity font-semibold">
-                            <button onClick={handlePopularClick} className='bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-2 rounded-3xl shadow-lg focus:outline-none focus:ring focus:ring-cyan-300 transition duration-200 transform hover:scale-110'>Popular</button>
+                            <button onClick={handlePopularClick} className='bg-gradient-to-r from-cyan-700 to-blue-900 px-8 py-2 rounded-3xl shadow-lg focus:outline-none focus:ring focus:ring-cyan-300 transition duration-200 transform hover:scale-110'>Popular</button>
                         </div>
                         <div className="text-whity font-semibold">
-                            <button onClick={handleRecentClick} className='bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-2 rounded-3xl shadow-lg focus:outline-none focus:ring focus:ring-cyan-300 transition duration-200 transform hover:scale-110'>Recent</button>
+                            <button onClick={handleRecentClick} className='bg-gradient-to-r from-cyan-700 to-blue-900 px-8 py-2 rounded-3xl shadow-lg focus:outline-none focus:ring focus:ring-cyan-300 transition duration-200 transform hover:scale-110'>Recent</button>
                         </div>
                     </div>
 
@@ -78,7 +79,7 @@ function Header() {
                             {displayedArticles.map((article) => (
                                 <div className="py-1 hover:underline" key={article.id}>
                                     <Link to={`/article/${article.id}`} className="flex items-center justify-start space-x-4">
-                                        <div className="p-12 sm:p-10 rounded-full bg-center bg-cover shadow-2xl transition duration-200 transform hover:scale-110" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Jobs'>
+                                        <div className="p-12 sm:p-10 rounded-full bg-center bg-cover shadow-2xl transition duration-200 transform hover:scale-110" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'>
                                         </div>
                                         <div className="flex flex-col justify-between">
                                             <h6 className="text-secondary font-semibold text-lg">{article.title}</h6>
