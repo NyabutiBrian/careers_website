@@ -29,7 +29,7 @@ function Navbar({activeLink}) {
                         <li><Link to="/category/6">Internships</Link></li>
                         <li><Link to="/category/7">Scholarships</Link></li>
                         <li>
-                            <a to="">More</a>
+                            <summary>More</summary>
                             <ul className="p-2">
                                 <li><Link to="/about">About Us</Link></li>
                                 <li><a href="#contact-us">Contact Us</a></li>
