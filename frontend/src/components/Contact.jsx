@@ -70,8 +70,8 @@ function Contact() {
                 </div>
             }
                 <div className="max-w-xl mx-auto text-center py-4">
-                    <h3 className="text-secondary font-semibold text-4xl">Get In Touch</h3>
-                    <p className="py-2 text-secondary font-light">
+                    <h3 className="text-secondary font-semibold text-2xl lg:text-3xl">Get In Touch</h3>
+                    <p className="py-2 text-secondary font-light text-sm lg:text-base">
                         We are available to offer our support and respond 
                         to inquiries that you may have. We are excitedly 
                         anticipating hearing from you.
@@ -79,7 +79,7 @@ function Contact() {
                 </div>
                 <div className="grid lg:grid-cols-2 gap-8">
                     <div className="flex flex-col text-secondary px-4 sm:px-16 py-8 rounded-3xl shadow-2xl">
-                        <h5 className="text-secondary font-semibold text-2xl text-center">Reach Out to <span className="text-primary">Open Career</span></h5>
+                        <h4 className="text-secondary font-semibold text-xl text-center">Reach Out to <span className="text-primary">Open Career</span></h4>
                         <p className="py-4 text-secondary font-light text-sm text-justify">
                             Looking for something specific? See below for contacts 
                             related to your inquiry. If you don’t find what you need, 
