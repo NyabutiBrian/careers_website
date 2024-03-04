@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing';
+import Category from './pages/Category';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <Routes>
             <Route path="/:id" element={ <Landing /> } />
             <Route path="/" element={ <Landing /> } />
-            {/* <Route path="/category/:id" element={ <Category /> } /> */}
+            <Route path="/category/:id" element={ <Category /> } />
             {/* <Route path="/article/:id" element={ <Article /> } /> */}
             {/* <Route path="/about" element={ <About /> } /> */}
             {/* <Route path="/policy" element={ <PrivacyPolicy /> } /> */}
