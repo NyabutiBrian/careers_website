@@ -7,7 +7,7 @@ function CarouselCategories() {
 
   useEffect(() => {
     // Fetch categories
-    fetch('https://open-jobs.onrender.com/openjobs/api/category/')
+    fetch(import.meta.env.VITE_API_CATEGORY)
         .then(response => response.json())
         .then(data => {
             setCategories(data);

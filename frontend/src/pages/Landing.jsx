@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 
 import Navbar from '../components/Navbar';
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 import Header from '../layouts/landing/Header';
-// import CategoriesPost from '../layouts/landing/CategoriesPost'
+import CategoriesPost from '../layouts/landing/CategoriesPost';
 
 
 function Landing() {
@@ -19,7 +19,7 @@ function Landing() {
         <Navbar/>
         <main className="max-w-7xl mx-auto px-4">
             <Header />
-            {/* <CategoriesPost /> */}
+            <CategoriesPost />
             <Contact />
             <Footer />
         </main>

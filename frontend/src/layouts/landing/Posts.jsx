@@ -21,7 +21,7 @@ function Posts() {
 
     useEffect(() => {
         // Fetch articles
-        fetch('https://open-jobs.onrender.com/openjobs/api/article/')
+        fetch(import.meta.env.VITE_API_ARTICLE)
             .then(response => response.json())
             .then(data => {
                 setArticles(data);
@@ -34,7 +34,7 @@ function Posts() {
 
         if (id) {
             // Fetch article content based on the id if the user clicks a link
-            fetch(`https://open-jobs.onrender.com/openjobs/api/article/${id}`)
+            fetch(import.meta.env.VITE_API_ARTICLE + `${id}`)
                 .then(response => response.json())
                 .then(data => {
                     setArticle(data);
@@ -46,7 +46,7 @@ function Posts() {
                 });
         } else {
             // Fetch the list of articles to get the latest article ID
-            fetch('https://open-jobs.onrender.com/openjobs/api/article/')
+            fetch(import.meta.env.VITE_API_ARTICLE)
                 .then(response => response.json())
                 .then(data => {
                     // Get the latest article ID from the list of articles
@@ -54,7 +54,7 @@ function Posts() {
 
                     if (latestArticleId) {
                         // Fetch article content based on the latest article ID
-                        fetch(`https://open-jobs.onrender.com/openjobs/api/article/${latestArticleId}`)
+                        fetch(import.meta.env.VITE_API_ARTICLE + `${latestArticleId}`)
                             .then(response => response.json())
                             .then(data => {
                                 setArticle(data);
