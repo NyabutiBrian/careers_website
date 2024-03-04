@@ -93,7 +93,6 @@ npm run blueprint
 
 ## Useful Resources
 - [Tailwind Website](https://tailwindcss.com/)
-- [Portfolio Template](https://nyabutibrian.github.io/momanyiBrianPortfolio/blueprints/build/index.html)
 
 **More content to be added, feel free to add any engaging content**
 
