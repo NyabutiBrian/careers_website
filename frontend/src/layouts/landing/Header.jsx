@@ -84,7 +84,7 @@ function Header() {
                                         <div className="flex flex-col justify-between">
                                             <h6 className="text-secondary font-semibold text-lg">{article.title}</h6>
                                             <div className="flex text-xs space-x-3 text-secondary">
-                                                <p>by <span className="text-primary font-semibold italic">Elijah</span></p>
+                                                <p>by <span className="text-primary font-semibold italic">Elijah Maina</span></p>
                                                 <p>{new Date(article.post_date).toLocaleString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' })}</p>
                                             </div>
                                         </div>
