@@ -27,7 +27,7 @@ function Navbar({activeLink}) {
                         <li><Link to="/" className="text-primary">Home</Link></li>
                         <li><Link to="/category/6">Jobs</Link></li>
                         <li><Link to="/category/6">Internships</Link></li>
-                        <li><Link to="/category/7">Scholarships</Link></li>
+                        <li><Link to="/category/7">International Jobs</Link></li>
                         <li>
                             <summary>More</summary>
                             <ul className="p-2">
@@ -50,7 +50,7 @@ function Navbar({activeLink}) {
                     <li><Link to="/" className="text-primary">Home</Link></li>
                     <li><Link to="/category/6">Jobs</Link></li>
                     <li><Link to="/category/6">Internships</Link></li>
-                    <li><Link to="/category/7">Scholarships</Link></li>
+                    <li><Link to="/category/7">International Jobs</Link></li>
                     <li>
                         <details>
                             <summary>More</summary>
