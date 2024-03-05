@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
+
 import Navbar from '../components/Navbar'
-import CategoriesPost from '../layouts/categories/CategoriesPost'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+
+import CategoriesPost from '../layouts/categories/CategoriesPost'
 
 
 function Category() {
