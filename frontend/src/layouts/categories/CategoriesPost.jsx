@@ -111,7 +111,7 @@ function CategoriesPost() {
                 <div className="col-span-2 bg-whity rounded-3xl px-6 py-4 shadow-2xl">
                     {/* Welcome */}
                     <section className="py-8">
-                        <div className="max-w-2xl mx-auto text-whity bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl py-6 px-6 sm:px-12 shadow-2xl mt-4 xl:mt-0">
+                        <div className="max-w-2xl mx-auto text-whity grad-to-br rounded-3xl py-6 px-6 sm:px-12 shadow-2xl mt-4 xl:mt-0">
                             <h1 className="text-xl py-4 font-semibold text-center">Welcome to <span className="italic text-whity">Open Career</span></h1>
                         </div>
                     </section>
@@ -144,12 +144,12 @@ function CategoriesPost() {
                                     <h1 className="-mt-12 text-lg text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">CORE VALUES</h1>
                                 </div>
                                 <div className="py-4 flex items-center justify-evenly flex-wrap px-2 text-sm text-white space-x-1 space-y-2">
-                                    <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Innovation</p>
-                                    <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Integrity</p>
-                                    <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Team Work</p>
-                                    <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Excellence</p>
-                                    <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Customer Focus</p>
-                                    <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Professionalism</p>
+                                    <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Innovation</p>
+                                    <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Integrity</p>
+                                    <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Team Work</p>
+                                    <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Excellence</p>
+                                    <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Customer Focus</p>
+                                    <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Professionalism</p>
                                 </div>
                             </div>
                         </div>

@@ -13,7 +13,7 @@ function Post() {
 
     useEffect(() => {
         // Fetch article content based on the id
-        fetch(`https://open-jobs.onrender.com/openjobs/api/article/${id}`)
+        fetch(import.meta.env.VITE_API_ARTICLE + `${id}`)
             .then(response => response.json())
             .then(data => {
                 setArticle(data);
@@ -62,12 +62,12 @@ function Post() {
                     <>
                         {article &&  (
                             <div className="max-w-2xl mx-auto mb-12 border-t-4 xl:border-t-0 xl:border-l-4 even:border-gold odd:border-primary py-6 px-8 rounded-3xl shadow-2xl">
-                                <div className="my-2 px-6 py-12 rounded-3xl bg-center bg-cover shadow-2xl relative" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Jobs'>
+                                <div className="my-2 px-6 py-12 rounded-3xl bg-center bg-cover shadow-2xl relative" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'>
                                     <div className="rounded-3xl absolute top-0 left-0 w-[100%] h-[100%]" style={customStyle2}></div>
                                     <div className="relative z-10">
                                         <h2 id='articleHeader' className="text-whity text-2xl font-semibold">{article.title}</h2>
                                         <div className="py-2 flex items-center space-x-4 text-whity">
-                                            <i className="fa-solid fa-location-dot fa-beat-fade"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width='0.7rem' fill='#FFFFFF' viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                                             <p>{article.location}</p>
                                         </div>
                                     </div>
@@ -92,17 +92,19 @@ function Post() {
                                 </div>
 
                                 <div className="flex flex-row items-center text-xs text-secondary space-x-2 py-2">
-                                    <p>by <span className="text-primary font-semibold italic">Elijah</span></p>
+                                    <p>by <span className="text-primary font-semibold italic">Elijah Maina</span></p>
                                     <p>{new Date(article.post_date).toLocaleString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' })}</p>
                                 </div>
             
                                 <div className="py-4 flex flex-row justify-between items-center text-secondary">
                                     <div className="flex flex-row items-center text-sm space-x-2">
                                         <p className="text-primary font-semibold italic">Share</p>
-                                        <button onClick={handleClick}><i className="fa-brands fa-whatsapp text-success text-xl"></i></button>
+                                        <button onClick={handleClick}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#128C7E' viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                                        </button>
                                     </div>
                                     <div className="text-whity font-semibold text-xs transition duration-200 transform hover:scale-110">
-                                        <a href={article.job_link} target='Job Link' className="bg-gradient-to-r from-cyan-500 to-blue-500 focus:outline-none focus:ring focus:ring-cyan-300 py-2 px-4 rounded-3xl">More Details</a>
+                                        <a href={article.job_link} target='Job Link' className="grad-to-br focus:outline-none focus:ring focus:ring-cyan-300 py-2 px-4 rounded-3xl">More Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -116,8 +118,8 @@ function Post() {
         <div className="col-span-2 bg-whity rounded-3xl px-6 py-4 shadow-2xl">
             {/* Welcome */}
             <section className="py-8">
-                <div className="max-w-2xl text-whity bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl py-6 px-6 sm:px-12 shadow-2xl mt-4 xl:mt-0">
-                    <h1 className="text-xl sm:text-2xl py-4 font-semibold text-center">Welcome to <span className="italic text-whity">Open Jobs</span></h1>
+                <div className="max-w-2xl text-whity grad-to-br rounded-3xl py-6 px-6 sm:px-12 shadow-2xl mt-4 xl:mt-0">
+                    <h1 className="text-xl py-4 font-semibold text-center">Welcome to <span className="italic text-whity">Open Career</span></h1>
                 </div>
             </section>
 
@@ -126,15 +128,15 @@ function Post() {
                 <div className="bg-whity rounded-3xl shadow-2xl p-4 sm:px-8">
                     <div>
                         <div className="flex justify-center px-8 md:px-16">
-                            <h1 className="-mt-12 text-xl sm:text-2xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">OUR OBJECTIVES</h1>
+                            <h1 className="-mt-12 text-xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">OUR OBJECTIVES</h1>
                         </div>
                         <div className="py-4 text-secondary text-justify">
                             <p className="text-sm">
-                                The objective is to bridge the information gap between Kenyan youths and the diverse 
-                                opportunities available to them. <br/><br/>
-                                By sourcing opportunities from first-party and reputable second-party websites, 
-                                the objective is to provide accurate and reliable information that helps young 
-                                individuals make informed decisions regarding their educational and career paths.
+                                At Open Career, we prioritize inclusivity, diversity, and equal opportunities 
+                                for all individuals, regardless of their backgrounds or experiences. 
+                                We believe in creating a level playing field where every candidate has the 
+                                chance to showcase their skills and potential, and every employer has access to a 
+                                diverse pool of qualified candidates. 
                             </p>
                         </div>
                     </div>
@@ -146,15 +148,15 @@ function Post() {
                 <div className="bg-whity rounded-3xl shadow-2xl p-4 sm:px-8">
                     <div>
                         <div className="flex justify-center px-8 md:px-16">
-                            <h1 className="-mt-12 text-xl sm:text-2xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">CORE VALUES</h1>
+                            <h1 className="-mt-12 text-xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">CORE VALUES</h1>
                         </div>
                         <div className="py-4 flex items-center justify-evenly flex-wrap px-2 text-sm text-white space-x-1 space-y-2">
-                            <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Innovation</p>
-                            <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Integrity</p>
-                            <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Team Work</p>
-                            <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Excellence</p>
-                            <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Customer Focus</p>
-                            <p className="odd:bg-gradient-to-r from-cyan-500 to-blue-500 even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Professionalism</p>
+                            <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Innovation</p>
+                            <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Integrity</p>
+                            <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Team Work</p>
+                            <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Excellence</p>
+                            <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Customer Focus</p>
+                            <p className="odd:bg-gradient-to-br from-[#108eb1] to-[#1e3a8a] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Professionalism</p>
                         </div>
                     </div>
                 </div>

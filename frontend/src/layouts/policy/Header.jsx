@@ -4,7 +4,7 @@ const Header = () => {
   return ( 
     <>
       <section>
-        <div className="my-4 py-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full">
+        <div className="my-4 py-8 grad-to-br rounded-full">
           <div className="text-center">
             <h3 className="text-whity font-semibold text-2xl">Privacy Page</h3>
           </div>
@@ -15,12 +15,12 @@ const Header = () => {
         <div className="bg-whity rounded-3xl shadow-2xl p-4 sm:px-8">
           <div>
             <div className="flex justify-start px-8 md:px-16">
-              <h1 className="-mt-12 text-3xl sm:text-4xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">Privacy Policy</h1>
+              <h1 className="-mt-12 text-2xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">Privacy Policy</h1>
             </div>
 
             <div className="py-4 text-secondary text-justify text-sm md:text-base">
               <p className="italic py-2">
-                Our Open jobs Notice of Privacy Practices describes how we use and disclose your protected health
+                Our Open Career Notice of Privacy Practices describes how we use and disclose your protected health
                 information or PHI, our legal duties with respect to your PHI, and your rights with respect to your 
                 PHI and how you may exercise them
               </p>

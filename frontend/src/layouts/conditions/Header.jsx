@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <section>
-        <div className="my-4 py-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full">
+        <div className="my-4 py-8 grad-to-br rounded-full">
           <div className="text-center">
             <h3 className="text-whity font-semibold text-xl">Terms & Conditions Page</h3>
           </div>
@@ -15,7 +15,7 @@ const Header = () => {
         <div className="bg-whity rounded-3xl shadow-2xl p-4 sm:px-8">
           <div>
             <div className="flex justify-start px-8 md:px-16">
-              <h1 className="-mt-12 text-xl sm:text-4xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">Terms & Conditions</h1>
+              <h1 className="-mt-12 text-2xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">Terms & Conditions</h1>
             </div>
 
             <div className="py-4 text-secondary text-justify text-sm md:text-base">
@@ -25,9 +25,9 @@ const Header = () => {
                   <li className='font-medium'>Overview</li>
                   <p className="italic py-2">
                     These terms and conditions outline the rules and regulations for the use of open Job Website,
-                    located at https://openjobs.com. <br /><br />
+                    located at https://opencareer.com. <br /><br />
                     By accessing this website we assume you accept these terms and conditions. Do not continue to
-                    use open jobs website if you do not agree to take all of the terms and conditions stated on this page.
+                    use open career website if you do not agree to take all of the terms and conditions stated on this page.
                     Our Terms and Conditions were created with the help of the Terms And Conditions Generator and
                     the Free Terms & Conditions Generator.
                   </p>
@@ -68,7 +68,7 @@ const Header = () => {
                     Override any security feature or bypass or circumvent any access controls or use limits of the
                     Service (such as caps on keyword searches or profile views); <br /><br />
                     Copy, use, disclose or distribute any information obtained from the Services, whether directly or
-                    through third parties (such as search engines), without the consent of open jobs
+                    through third parties (such as search engines), without the consent of open career
                   </p>
                 </div>
 
@@ -107,7 +107,7 @@ const Header = () => {
                 <div className='py-2'>
                   <li className='font-medium'>Cancellation Policy</li>
                   <p className="italic py-2">
-                    You are free to cancel your OpenJobs.com account at any time. Cancellation requests must be sent
+                    You are free to cancel your Opencareer.com account at any time. Cancellation requests must be sent
                     via our contact page.
                   </p>
                 </div>

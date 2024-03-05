@@ -1,5 +1,7 @@
 import React from 'react';
+
 import CarouselCategories from '../landing/CarouselCategories';
+
 import Post from './Post';
 
 function ArticlePost() {

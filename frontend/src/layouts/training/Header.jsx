@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
         <section>
-            <div className="my-4 py-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full">
+            <div className="my-4 py-8 grad-to-br rounded-full">
             <div className="text-center">
                 <h3 className="text-whity font-semibold text-2xl">Trainings Coming Soon</h3>
             </div>

@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+
 import Navbar from '../components/Navbar';
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+
 import ArticlePost from '../layouts/articles/ArticlePost';
 
 function Article() {
