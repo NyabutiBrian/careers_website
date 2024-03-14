@@ -112,7 +112,7 @@ function CategoriesPost() {
                     {/* Welcome */}
                     <section className="py-8">
                         <div className="max-w-2xl mx-auto text-whity grad-to-br rounded-3xl py-6 px-6 sm:px-12 shadow-2xl mt-4 xl:mt-0">
-                            <h1 className="text-xl py-4 font-semibold text-center">Welcome to <span className="italic text-whity">Open Career</span></h1>
+                            <h1 className="text-xl py-4 font-semibold text-center">Welcome to <span className="italic text-whity">Opened Career</span></h1>
                         </div>
                     </section>
 
@@ -125,7 +125,7 @@ function CategoriesPost() {
                                 </div>
                                 <div className="py-4 text-secondary text-justify">
                                     <p className="text-sm">
-                                      At Open Career, we prioritize inclusivity, diversity, and equal opportunities 
+                                      At Opened Career, we prioritize inclusivity, diversity, and equal opportunities 
                                       for all individuals, regardless of their backgrounds or experiences. 
                                       We believe in creating a level playing field where every candidate has the 
                                       chance to showcase their skills and potential, and every employer has access to a 

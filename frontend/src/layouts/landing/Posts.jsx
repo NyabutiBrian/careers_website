@@ -86,12 +86,13 @@ function Posts() {
         const currentPageUrl = window.location.href;
 
         // Customize the font
+        const assistTitle = 'OPENed CAREER';
         const boldArticleHeader = `*${articleHeader}*`;
         const assistText = 'Explore more content and requirements by following the link below:';
         const boldAssistText = `*${assistText}*`;
 
         // Encode the article information for the URL
-        const encodedArticle = encodeURIComponent(boldArticleHeader + '\n\n' + articleContent + '\n\n' + boldAssistText + '\n' + currentPageUrl);
+        const encodedArticle = encodeURIComponent(assistTitle + '\n\n' + boldArticleHeader + '\n\n' + articleContent + '\n\n' + boldAssistText + '\n' + currentPageUrl);
 
         // Generate the WhatsApp share URL
         const whatsappUrl = 'https://wa.me/?text=' + encodedArticle;
@@ -104,12 +105,13 @@ function Posts() {
         // Get the article header and content
         const articleHeader = document.getElementById('articleHeader').innerText;
         const articleContent = document.getElementById('articleContent').innerText;
+        const assistTitle = 'OPENed CAREER';
 
         // Get the current page URL
         const currentPageUrl = window.location.href;
 
         // Encode the article information for the URL
-        const encodedArticle = encodeURIComponent(articleHeader + '\n\n' + articleContent + '\n\n' + currentPageUrl);
+        const encodedArticle = encodeURIComponent(assistTitle + '\n\n' + articleHeader + '\n\n' + articleContent + '\n\n' + currentPageUrl);
     
         // Generate the Facebook share URL
         const facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + currentPageUrl + '&quote=' + encodedArticle;
@@ -152,7 +154,7 @@ function Posts() {
                     {articles.slice().reverse().slice(0, 4).map((article) => (
                         <div className="py-3" key={article.id}>
                             <Link to={`/${article.id}`} onClick={scrollToArticleSection} className="flex items-center space-x-4 shadow-2xl rounded-3xl">
-                                <div className="px-14 py-20 sm:p-20 rounded-s-3xl bg-center bg-cover shadow-2xl" style={{backgroundImage: `url(${article.image})`,}}>
+                                <div className="px-14 py-20 sm:p-20 rounded-s-3xl bg-center bg-cover shadow-2xl" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
                                 </div>
                                 <div className="flex flex-col justify-evenly">
                                     <div>
@@ -187,7 +189,7 @@ function Posts() {
                     <>
                         {article && (
                             <div className="max-w-xl mx-auto mb-12 border-t-4 xl:border-t-0 xl:border-l-4 even:border-gold odd:border-primary py-6 px-8 rounded-3xl shadow-2xl">
-                                <div className="my-2 px-6 py-12 rounded-3xl bg-center bg-cover shadow-2xl relative" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Jobs'>
+                                <div className="my-2 px-6 py-24 rounded-3xl bg-center bg-cover shadow-2xl relative" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
                                     <div className="rounded-3xl absolute top-0 left-0 w-[100%] h-[100%]" style={customStyle2}></div>
                                     <div className='relative z-10'>
                                         <h2 id='articleHeader' className="text-whity text-2xl font-semibold">{article.title}</h2>

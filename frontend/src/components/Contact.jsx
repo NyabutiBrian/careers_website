@@ -79,7 +79,7 @@ function Contact() {
                 </div>
                 <div className="grid lg:grid-cols-2 gap-8">
                     <div className="flex flex-col text-secondary px-4 sm:px-16 py-8 rounded-3xl shadow-2xl">
-                        <h4 className="text-secondary font-semibold text-xl text-center">Reach Out to <span className="text-primary">Open Career</span></h4>
+                        <h4 className="text-secondary font-semibold text-xl text-center">Reach Out to <span className="text-primary">Opened Career</span></h4>
                         <p className="py-4 text-secondary font-light text-sm text-justify">
                             Looking for something specific? See below for contacts 
                             related to your inquiry. If you don’t find what you need, 
@@ -87,7 +87,7 @@ function Contact() {
                         </p>
                         <p className="py-2 text-primary font-semibold text-sm">GENERAL INQUIRIES</p>
                         <p className="text-secondary font-light text-sm">(+254) 700 000 897</p>
-                        <p className="text-secondary font-light text-sm">opencareer@gmail.com</p>
+                        <p className="text-secondary font-light text-sm">openedcareer@gmail.com</p>
                     </div>
                     <div className="px-4 sm:px-16 py-8 rounded-3xl shadow-2xl">
                         <form onSubmit={handleSubmit}>

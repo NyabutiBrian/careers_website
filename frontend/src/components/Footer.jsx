@@ -1,7 +1,7 @@
 import React, { useState, useEffect  } from 'react';
 import { Link } from 'react-router-dom';
 
-import hero3 from '../assets/images/hero3.webp'
+import footerlogo from '../assets/images/logo.webp'
 
 function Footer() {
 
@@ -28,7 +28,7 @@ function Footer() {
             <div className="flex flex-col items-center xl:flex-row xl:justify-between">
                 <div className="mb-6 xl:mb-0">
                     <Link to="/">
-                        <div className='py-24 px-32 rounded-3xl bg-center bg-cover' style={{backgroundImage: `url(${hero3})`}} alt="Footer Logo" title='Kenya Jobs | Open Career' loading='lazy'></div>
+                        <div className='py-24 px-32 rounded-3xl bg-center bg-cover' style={{backgroundImage: `url(${footerlogo})`}} alt="Footer Logo" title='Kenya Jobs | Opened Career' loading='lazy'></div>
                     </Link>
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -62,6 +62,9 @@ function Footer() {
                     <div>
                         <h2 className="mb-6 text-sm font-semibold text-primary uppercase">Legal</h2>
                         <ul className="text-secondary font-medium">
+                            <li className="mb-4">
+                                <Link to="/disclaimer" className="hover:underline">Disclaimer</Link>
+                            </li>
                             <li className="mb-4">
                                 <Link to="/policy" className="hover:underline">Privacy Policy</Link>
                             </li>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect  } from 'react';
 import { Link } from 'react-router-dom';
 
-import hero5 from '../../assets/images/hero1.webp'
-import hero1 from '../../assets/images/hero4.webp'
+import hero1 from '../../assets/images/hero-1.webp'
+import hero2 from '../../assets/images/hero-2.webp'
 
 function Header() {
 
@@ -42,8 +42,8 @@ function Header() {
             {/* Left */}
             <div className="flex flex-col space-y-4">
                 <div className="grid grid-cols-2 gap-4">
-                    <div className='py-24 sm:py-36 md:py-48 rounded-3xl shadow-2xl bg-center bg-cover' style={{backgroundImage: `url(${hero5})`}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'></div>
-                    <div className='py-24 sm:py-36 md:py-48 rounded-3xl shadow-2xl bg-center bg-cover' style={{backgroundImage: `url(${hero1})`}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'></div>
+                    <div className='py-24 sm:py-36 md:py-48 rounded-3xl shadow-2xl bg-center bg-cover' style={{backgroundImage: `url(${hero1})`}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'></div>
+                    <div className='py-24 sm:py-36 md:py-48 rounded-3xl shadow-2xl bg-center bg-cover' style={{backgroundImage: `url(${hero2})`}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'></div>
                 </div>
                 <div className="grad-to-br rounded-3xl py-6 px-6 sm:px-8 shadow-2xl">
                     <p className="text-whity text-sm md:text-base">
@@ -79,7 +79,7 @@ function Header() {
                             {displayedArticles.map((article) => (
                                 <div className="py-1 hover:underline" key={article.id}>
                                     <Link to={`/article/${article.id}`} className="flex items-center justify-start space-x-4">
-                                        <div className="p-12 sm:p-10 rounded-full bg-center bg-cover shadow-2xl transition duration-200 transform hover:scale-110" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'>
+                                        <div className="p-12 sm:p-10 rounded-full bg-center bg-cover shadow-2xl transition duration-200 transform hover:scale-110" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
                                         </div>
                                         <div className="flex flex-col justify-between">
                                             <h6 className="text-secondary font-semibold text-lg">{article.title}</h6>

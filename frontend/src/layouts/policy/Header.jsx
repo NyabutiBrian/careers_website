@@ -20,7 +20,7 @@ const Header = () => {
 
             <div className="py-4 text-secondary text-justify text-sm md:text-base">
               <p className="italic py-2">
-                Our Open Career Notice of Privacy Practices describes how we use and disclose your protected health
+                Our Opened Career Notice of Privacy Practices describes how we use and disclose your protected health
                 information or PHI, our legal duties with respect to your PHI, and your rights with respect to your 
                 PHI and how you may exercise them
               </p>

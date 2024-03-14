@@ -10,6 +10,7 @@ import Forums from './pages/Forums';
 import Partnerships from './pages/Partnerships';
 import Advice from './pages/Advice';
 import Training from './pages/Training';
+import Disclaimer from './pages/Disclaimer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/category/:id" element={ <Category /> } />
             <Route path="/article/:id" element={ <Article /> } />
             <Route path="/about" element={ <About /> } />
+            <Route path="/disclaimer" element={ <Disclaimer /> } />
             <Route path="/policy" element={ <PrivacyPolicy /> } />
             <Route path="/conditions" element={ <TermsConditions /> } />
             <Route path="/forums" element={ <Forums /> } />

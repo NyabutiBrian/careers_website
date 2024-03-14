@@ -34,12 +34,13 @@ function Post() {
         const currentPageUrl = window.location.href;
 
         // Customize the font
+        const assistTitle = 'OPENed CAREER';
         const boldArticleHeader = `*${articleHeader}*`;
         const assistText = 'Explore more content and requirements by following the link below:';
         const boldAssistText = `*${assistText}*`;
 
         // Encode the article information for the URL
-        const encodedArticle = encodeURIComponent(boldArticleHeader + '\n\n' + articleContent + '\n\n' + boldAssistText + '\n' + currentPageUrl);
+        const encodedArticle = encodeURIComponent(assistTitle + '\n\n' + boldArticleHeader + '\n\n' + articleContent + '\n\n' + boldAssistText + '\n' + currentPageUrl);
 
         // Generate the WhatsApp share URL
         const whatsappUrl = 'https://wa.me/?text=' + encodedArticle;
@@ -52,12 +53,13 @@ function Post() {
         // Get the article header and content
         const articleHeader = document.getElementById('articleHeader').innerText;
         const articleContent = document.getElementById('articleContent').innerText;
+        const assistTitle = 'OPENed CAREER';
 
         // Get the current page URL
         const currentPageUrl = window.location.href;
 
         // Encode the article information for the URL
-        const encodedArticle = encodeURIComponent(articleHeader + '\n\n' + articleContent + '\n\n' + currentPageUrl);
+        const encodedArticle = encodeURIComponent(assistTitle + '\n\n' + articleHeader + '\n\n' + articleContent + '\n\n' + currentPageUrl);
     
         // Generate the Facebook share URL
         const facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + currentPageUrl + '&quote=' + encodedArticle;
@@ -95,7 +97,7 @@ function Post() {
                     <>
                         {article &&  (
                             <div className="max-w-2xl mx-auto mb-12 border-t-4 xl:border-t-0 xl:border-l-4 even:border-gold odd:border-primary py-6 px-8 rounded-3xl shadow-2xl">
-                                <div className="my-2 px-6 py-12 rounded-3xl bg-center bg-cover shadow-2xl relative" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Open Career'>
+                                <div className="my-2 px-6 py-24 rounded-3xl bg-center bg-cover shadow-2xl relative" style={{backgroundImage: `url(${article.image})`,}} alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
                                     <div className="rounded-3xl absolute top-0 left-0 w-[100%] h-[100%]" style={customStyle2}></div>
                                     <div className="relative z-10">
                                         <h2 id='articleHeader' className="text-whity text-2xl font-semibold">{article.title}</h2>
@@ -161,7 +163,7 @@ function Post() {
             {/* Welcome */}
             <section className="py-8">
                 <div className="max-w-2xl text-whity grad-to-br rounded-3xl py-6 px-6 sm:px-12 shadow-2xl mt-4 xl:mt-0">
-                    <h1 className="text-xl py-4 font-semibold text-center">Welcome to <span className="italic text-whity">Open Career</span></h1>
+                    <h1 className="text-xl py-4 font-semibold text-center">Welcome to <span className="italic text-whity">Opened Career</span></h1>
                 </div>
             </section>
 
@@ -174,7 +176,7 @@ function Post() {
                         </div>
                         <div className="py-4 text-secondary text-justify">
                             <p className="text-sm">
-                                At Open Career, we prioritize inclusivity, diversity, and equal opportunities 
+                                At Opened Career, we prioritize inclusivity, diversity, and equal opportunities 
                                 for all individuals, regardless of their backgrounds or experiences. 
                                 We believe in creating a level playing field where every candidate has the 
                                 chance to showcase their skills and potential, and every employer has access to a 

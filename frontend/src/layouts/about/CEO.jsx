@@ -7,7 +7,7 @@ function CEO() {
         <div className="py-16">
             <div className="flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0">
                 <div className="lg:-mx-8 z-10">
-                    <img src={ceo} alt="Open Jobs Leading Image" title='Open Career CEO' className="w-72 sm:w-96 rounded-3xl shadow-2xl"/>
+                    <img src={ceo} alt="Opened Jobs Leading Image" title='Opened Career CEO' className="w-72 sm:w-96 rounded-3xl shadow-2xl"/>
                 </div>
                 <div className="flex flex-col max-w-xl text-whity grad-to-br rounded-3xl py-8 px-6 md:px-16 shadow-2xl z-20">
                     <div className="flex justify-center">

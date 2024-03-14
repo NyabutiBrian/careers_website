@@ -24,10 +24,10 @@ const Header = () => {
                 <div className='py-2'>
                   <li className='font-medium'>Overview</li>
                   <p className="italic py-2">
-                    These terms and conditions outline the rules and regulations for the use of open Job Website,
-                    located at https://opencareer.com. <br /><br />
+                    These terms and conditions outline the rules and regulations for the use of opened Job Website,
+                    located at https://openedcareer.com. <br /><br />
                     By accessing this website we assume you accept these terms and conditions. Do not continue to
-                    use open career website if you do not agree to take all of the terms and conditions stated on this page.
+                    use opened career website if you do not agree to take all of the terms and conditions stated on this page.
                     Our Terms and Conditions were created with the help of the Terms And Conditions Generator and
                     the Free Terms & Conditions Generator.
                   </p>
@@ -68,7 +68,7 @@ const Header = () => {
                     Override any security feature or bypass or circumvent any access controls or use limits of the
                     Service (such as caps on keyword searches or profile views); <br /><br />
                     Copy, use, disclose or distribute any information obtained from the Services, whether directly or
-                    through third parties (such as search engines), without the consent of open career
+                    through third parties (such as search engines), without the consent of opened career
                   </p>
                 </div>
 
@@ -107,7 +107,7 @@ const Header = () => {
                 <div className='py-2'>
                   <li className='font-medium'>Cancellation Policy</li>
                   <p className="italic py-2">
-                    You are free to cancel your Opencareer.com account at any time. Cancellation requests must be sent
+                    You are free to cancel your Openedcareer.com account at any time. Cancellation requests must be sent
                     via our contact page.
                   </p>
                 </div>
