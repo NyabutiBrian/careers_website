@@ -25,9 +25,9 @@ function Navbar({activeLink}) {
                     </button>
                     <ul tabIndex="0" className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-cream rounded-box w-52">
                         <li><Link to="/" className="text-primary">Home</Link></li>
-                        <li><Link to="/category/6">Jobs</Link></li>
-                        <li><Link to="/category/6">Internships</Link></li>
-                        <li><Link to="/category/7">International Jobs</Link></li>
+                        <li><Link to="/category/3">Online Jobs</Link></li>
+                        <li><Link to="/category/10">Internships</Link></li>
+                        <li><Link to="/category/11">International Jobs</Link></li>
                         <li>
                             <summary>More</summary>
                             <ul className="p-2">
@@ -48,9 +48,9 @@ function Navbar({activeLink}) {
             <div className="navbar-center hidden lg:flex text-secondary font-semibold">
                 <ul className="menu menu-horizontal px-1">
                     <li><Link to="/" className="text-primary">Home</Link></li>
-                    <li><Link to="/category/6">Jobs</Link></li>
-                    <li><Link to="/category/6">Internships</Link></li>
-                    <li><Link to="/category/7">International Jobs</Link></li>
+                    <li><Link to="/category/3">Jobs</Link></li>
+                    <li><Link to="/category/10">Internships</Link></li>
+                    <li><Link to="/category/11">International Jobs</Link></li>
                     <li>
                         <details>
                             <summary>More</summary>
