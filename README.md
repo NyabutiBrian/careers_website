@@ -1,13 +1,13 @@
-## OPEN CAREER PROJECT
+## OPENed CAREER PROJECT
 
 ## Table of contents
 
 - [Overview](#overview)
     - [Introduction](#introduction)
     - [Features](#features)
-- [Process + Development](#process-+-development)
+- [Process + Development](#process--development)
     - [Figma Design](#figma-design)
-    - [HTML + CSS + Tailwind Development](#html-+-css+-tailwind-development)
+    - [HTML + CSS + Tailwind Development](#html--css--tailwind-development)
     - [React Development](#react-development)
 - [Useful Resources](#useful-resources)
 - [Author](#author)
@@ -35,8 +35,8 @@
 ### HTML + CSS + Tailwind Development
 - This section identifies the code templates. Templates do not have Javascript functionalitiies and animations.
 - The templates are in the folder blueprint.
-- Links to Open Career
 - [Open Career Template blueprint](https://nyabutibrian.github.io/careers_website/blueprint/build/)
+- [Opened Career Template blueprint](https://nyabutibrian.github.io/careers_website/blueprint2/build/)
 
 ## React Development
 - This section identifies the React code development. The templates have been modified to become reactive. 
