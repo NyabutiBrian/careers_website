@@ -59,9 +59,17 @@ touch input.css
 module.exports = {
   content: ["./build/**/*.{html,js}"], /*all html files in the build folder*/
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Poppins: ['Poppins'],
+      },
+      colors: {
+        primary: '#0a66c2',
+        secondary: '#363753',
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 ```
 
@@ -81,7 +89,7 @@ module.exports = {
 
 ```bash
 # run the script in the terminal
-npm run blueprint
+npm run blueprint2
 ```
 
 **DO NOT forget to link the style.css file to your index.html file in the build folder.**
