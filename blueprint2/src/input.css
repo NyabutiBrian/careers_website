@@ -11,6 +11,10 @@ body {
 .grad-to-br {
     background-image: linear-gradient(to bottom right, #108eb1, #1e3a87);
 }
+.rounded-tr-bl-4xl {
+    border-start-end-radius:12rem;
+    border-end-start-radius: 12rem;
+}
 
 /* fluid font size */
 h1 {
