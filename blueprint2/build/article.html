@@ -29,8 +29,8 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="shadow-xl sticky top-0 z-50">
-        <div class="navbar bg-cream max-w-7xl mx-auto">
+    <nav class="shadow-xl sticky top-0 bg-cream z-50">
+        <div class="navbar max-w-7xl mx-auto">
             <!-- Mobile Nav-item-left -->
             <div class="navbar-start text-secondary font-semibold">
                 <div class="dropdown">
@@ -43,10 +43,10 @@
 
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-cream rounded-box w-52">
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./pages.html">Jobs</a></li>
-                        <li><a href="./pages.html">Internships</a></li>
-                        <li><a href="./pages.html">International Jobs</a></li>
-                        <li><a href="./pages.html">About Us</a></li>
+                        <li><a href="./category.html">Jobs</a></li>
+                        <li><a href="./category.html">Internships</a></li>
+                        <li><a href="./category.html">International Jobs</a></li>
+                        <li><a href="./about.html">About Us</a></li>
                     </ul>
                 </div>
                 <p class="btn btn-ghost text-sm lg:text-xl text-primary">OPENed Career</span></a>
@@ -56,17 +56,17 @@
             <div class="navbar-center hidden lg:flex text-secondary font-semibold">
                 <ul class="menu menu-horizontal px-1 text-base">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages.html">Jobs</a></li>
-                    <li><a href="./pages.html">Internships</a></li>
-                    <li><a href="./pages.html">International Jobs</a></li>
-                    <li><a href="./pages.html">About Us</a></li>
+                    <li><a href="./category.html">Jobs</a></li>
+                    <li><a href="./category.html">Internships</a></li>
+                    <li><a href="./category.html">International Jobs</a></li>
+                    <li><a href="./about.html">About Us</a></li>
                 </ul>
             </div>
 
             <!-- Search -->
             <div class="navbar-end">
                 <form role="search" aria-label="search button" method="get" id="searchform" action="<?php echo home_url('/'); ?>" class="flex flex-row items-center justify-center space-x-4 bg-cream text-darky rounded-3xl py-1 px-4">
-                    <input type="search" name="s" class="input input-xs w-full max-w-xs font-normal italic text-xs sm:text-sm bg-whity" placeholder="Job Title, Keyword..." required/>
+                    <input type="search" name="s" class="input input-xs w-full max-w-xs font-normal italic text-xs sm:text-sm bg-white" placeholder="Job Title, Keyword..." required/>
                     <button type="submit" aria-label="Submit" class="transition duration-200 transform hover:scale-125">
                         <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#4267B2' viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM184 296c0 13.3 10.7 24 24 24s24-10.7 24-24V232h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H232V120c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
                     </button>
@@ -82,6 +82,183 @@
             <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
         </div>
     </nav>
+
+    <!-- Header -->
+    <section>
+        <div class="bg-[#C3E5FF] py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <!-- Post -->
+                <div>
+                    <a href="./article.html" class="flex items-center justify-start space-x-8">
+                        <!-- rounded image -->
+                        <div class="p-12 sm:p-10 rounded-full bg-center bg-contain shadow-2xl" style="background-image: url(./assets/images/un.png)">
+                        </div>
+    
+                        <!-- post content -->
+                        <div class="flex flex-col justify-between">
+                            <h3 class="text-secondary font-semibold hover:underline">Project Officer Health, Sanitation and Hygiene</h3>
+                            <div class="flex space-x-3 text-secondary">
+                                <p>by <span class="text-primary font-semibold italic">Admin</span></p>
+                                <p>January 17, 2024</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="mt-8 flex">
+                        <p class="bg-white text-secondary py-2 px-4 rounded-3xl">Internship</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4"></main>
+
+    <!-- Container -->
+    <div>
+        <!-- SVG WAVE TOP -->
+        <div>
+            <img src="./assets/images/wave-haikei-up.svg" alt="svg background up" class="w-full">
+        </div>
+
+        <!-- Main Content -->
+        <div class="bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <!-- Recommended -->
+                <section class="py-8">
+                    <div class="bg-white rounded-3xl shadow-xl p-4 sm:px-8">
+                        <div>
+                            <div class="flex justify-start px-8 md:px-16">
+                                <h2 class="-mt-12 text-secondary italic py-4 px-6 font-semibold bg-white rounded-3xl shadow-xl">June Curated Opportunities</h2>
+                            </div>
+
+                            <!-- Posts -->
+                            <div class="py-8 grid lg:grid-cols-4 gap-4">
+                                <!-- Post -->
+                                <a href="./article.html" class="bg-white flex flex-col shadow-xl rounded-3xl transition duration-200 transform hover:scale-105">
+                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/un.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
+                                    </div>
+                
+                                    <div class="flex flex-col space-y-2 p-4">
+                                        <div>
+                                            <p class="text-secondary/50 font-semibold italic">posted 56 min ago</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-secondary font-semibold hover:underline">Project Officer Health, Sanitation and Hygiene</h3>
+                                        </div>
+                                        <div>
+                                            <p class="text-secondary italic line-clamp-2">Our client Sharp Daily is seeking to recruit for the below position. The client is an online news platform offering the latest news in business, real estate, education, careers, investments, tech and entrepreneurship</p>
+                                        </div>
+                
+                                        <div class="py-2">
+                                            <p class="text-primary/60 font-semibold italic hover:underline hover:text-primary">Read More</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Post -->
+                                <a href="./article.html" class="bg-white flex flex-col shadow-xl rounded-3xl transition duration-200 transform hover:scale-105">
+                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/un.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
+                                    </div>
+                
+                                    <div class="flex flex-col space-y-2 p-4">
+                                        <div>
+                                            <p class="text-secondary/50 font-semibold italic">posted 56 min ago</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-secondary font-semibold hover:underline">Project Officer Health, Sanitation and Hygiene</h3>
+                                        </div>
+                                        <div>
+                                            <p class="text-secondary italic line-clamp-2">Our client Sharp Daily is seeking to recruit for the below position. The client is an online news platform offering the latest news in business, real estate, education, careers, investments, tech and entrepreneurship</p>
+                                        </div>
+                
+                                        <div class="py-2">
+                                            <p class="text-primary/60 font-semibold italic hover:underline hover:text-primary">Read More</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Post -->
+                                <a href="./article.html" class="bg-white flex flex-col shadow-xl rounded-3xl transition duration-200 transform hover:scale-105">
+                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/un.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
+                                    </div>
+                
+                                    <div class="flex flex-col space-y-2 p-4">
+                                        <div>
+                                            <p class="text-secondary/50 font-semibold italic">posted 56 min ago</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-secondary font-semibold hover:underline">Project Officer Health, Sanitation and Hygiene</h3>
+                                        </div>
+                                        <div>
+                                            <p class="text-secondary italic line-clamp-2">Our client Sharp Daily is seeking to recruit for the below position. The client is an online news platform offering the latest news in business, real estate, education, careers, investments, tech and entrepreneurship</p>
+                                        </div>
+                
+                                        <div class="py-2">
+                                            <p class="text-primary/60 font-semibold italic hover:underline hover:text-primary">Read More</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Post -->
+                                <a href="./article.html" class="bg-white flex flex-col shadow-xl rounded-3xl transition duration-200 transform hover:scale-105">
+                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/un.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
+                                    </div>
+                
+                                    <div class="flex flex-col space-y-2 p-4">
+                                        <div>
+                                            <p class="text-secondary/50 font-semibold italic">posted 56 min ago</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-secondary font-semibold hover:underline">Project Officer Health, Sanitation and Hygiene</h3>
+                                        </div>
+                                        <div>
+                                            <p class="text-secondary italic line-clamp-2">Our client Sharp Daily is seeking to recruit for the below position. The client is an online news platform offering the latest news in business, real estate, education, careers, investments, tech and entrepreneurship</p>
+                                        </div>
+                
+                                        <div class="py-2">
+                                            <p class="text-primary/60 font-semibold italic hover:underline hover:text-primary">Read More</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section class="py-8">
+                    <!-- Title -->
+                    <div class="max-w-xl mx-auto text-center text-secondary bg-white rounded-t-3xl py-4 px-4">
+                        <h2 class="font-semibold">Get In Touch</h2>
+                        <p class="py-2 text-balance">
+                            We are available to offer our support and respond 
+                            to inquiries that you may have. We are excitedly anticipating hearing from you.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-secondary bg-white px-4 sm:px-16 py-8 rounded-b-3xl sm:rounded-3xl shadow-xl">
+                        <h2 class="font-semibold text-center">Reach Out to <span class="text-primary">Opened Career</span></h2>
+                        <p class="py-4 text-balance text-center">
+                            Looking for something specific? See below for contacts 
+                            related to your inquiry.
+                        </p>
+                        <p class="py-2 text-primary font-semibold">GENERAL INQUIRIES</p>
+                        <p>(+254) 798 621 700</p>
+                        <p>info@openedcareer.com</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- SVG WAVE BOTTOM -->
+        <div>
+            <img src="./assets/images/wave-haikei-down.svg" alt="svg background up" class="w-full">
+        </div>
+    </div>
 
     <!-- Container -->
     <main class="max-w-7xl mx-auto px-4">
