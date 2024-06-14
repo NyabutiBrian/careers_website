@@ -26,6 +26,8 @@
 
     <!-- Tailwind css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -86,7 +88,7 @@
     <!-- Main Article -->
     <section>
         <div class="bg-[#C3E5FF] pt-16">
-            <div class="max-w-7xl mx-auto px-4">
+            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="max-w-7xl mx-auto px-4">
                 <!-- Post -->
                 <div>
                     <a href="./article.html" class="flex items-center justify-start space-x-8">
@@ -120,7 +122,8 @@
             <img src="./assets/images/wave-haikei-down-lightblue.svg" alt="svg background up" class="w-full">
         </div>
 
-        <div class="py-8 max-w-7xl mx-auto px-4">
+        <!-- Article Content -->
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300" class="py-8 max-w-7xl mx-auto px-4">
             <div class="grid lg:grid-cols-5 gap-4">
                 <!-- Left -->
                 <div class="lg:col-span-3 bg-white rounded-3xl p-6 shadow-xl border-t-4 xl:border-t-0 xl:border-l-4 border-primary">
@@ -284,7 +287,7 @@
         <div class="bg-white">
             <div class="max-w-7xl mx-auto px-4">
                 <!-- Recommended -->
-                <section class="py-8">
+                <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300" class="py-8">
                     <div class="bg-white rounded-3xl shadow-xl p-4 sm:px-8">
                         <div>
                             <div class="flex justify-start px-8 md:px-16">
@@ -387,7 +390,7 @@
                 </section>
 
                 <!-- Contact -->
-                <section class="py-8">
+                <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300" class="py-8">
                     <!-- Title -->
                     <div class="max-w-xl mx-auto text-center text-secondary bg-white rounded-t-3xl py-4 px-4">
                         <h2 class="font-semibold">Get In Touch</h2>
@@ -421,7 +424,7 @@
     <main class="max-w-7xl mx-auto px-4">
 
         <!-- Footer -->
-        <footer id="footer">
+        <footer data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300" id="footer">
             <div class="max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto px-2 pt-8 pb-5">
                 <div class="flex flex-col items-center xl:flex-row xl:justify-between">
                     <div class="mb-6 xl:mb-0">
@@ -534,6 +537,12 @@
             </div>
         </footer>
     </main>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
