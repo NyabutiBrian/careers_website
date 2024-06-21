@@ -51,7 +51,8 @@
                         <li><a href="./about.html">About Us</a></li>
                     </ul>
                 </div>
-                <p class="btn btn-ghost text-sm lg:text-xl text-primary">OPENed Career</span></a>
+                <img src="./assets/images/navlogo.jpg" width="70px" alt="Opened Career">
+                <!-- <p class="btn btn-ghost text-sm lg:text-xl text-primary">OPENed Career</span></a> -->
             </div>
 
             <!-- Desktop Nav-item-right -->
@@ -70,7 +71,7 @@
                 <form role="search" aria-label="search button" method="get" id="searchform" action="<?php echo home_url('/'); ?>" class="flex flex-row items-center justify-center space-x-4 bg-cream text-darky rounded-3xl py-1 px-4">
                     <input type="search" name="s" class="input input-xs w-full max-w-xs font-normal italic text-xs sm:text-sm bg-white" placeholder="Job Title, Keyword..." required/>
                     <button type="submit" aria-label="Submit" class="transition duration-200 transform hover:scale-125">
-                        <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#4267B2' viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM184 296c0 13.3 10.7 24 24 24s24-10.7 24-24V232h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H232V120c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#4267B2' viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
                     </button>
                 </form>
             </div>
@@ -93,7 +94,7 @@
                 <div>
                     <a href="./article.html" class="flex items-center justify-start space-x-8">
                         <!-- rounded image -->
-                        <div class="p-12 sm:p-10 rounded-full bg-center bg-contain shadow-2xl" style="background-image: url(./assets/images/un.png)">
+                        <div class="p-12 sm:p-10 rounded-full bg-center bg-contain bg-no-repeat shadow-2xl" style="background-image: url(./assets/images/posts/transmision.jpg)">
                         </div>
     
                         <!-- post content -->
@@ -127,8 +128,7 @@
             <div class="grid lg:grid-cols-5 gap-4">
                 <!-- Left -->
                 <div class="lg:col-span-3 bg-white rounded-3xl p-6 shadow-xl">
-                    <div class="my-2 px-6 py-28 rounded-3xl bg-center bg-cover shadow-xl relative" style="background-image: url(./assets/images/un.png); position: relative;" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
-                    </div>
+                    <img src="./assets/images/posts/transmision.jpg" class="mb-4 rounded-3xl shadow-xl w-full" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
 
                     <div class="py-2 text-secondary font-semibold text-xs flex">
                         <p>Job Content</p>
@@ -278,6 +278,25 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Core Values -->
+                    <div class="py-8">
+                        <div class="bg-whity rounded-3xl shadow-2xl p-4 sm:px-8">
+                            <div>
+                                <div class="flex justify-center px-8 md:px-16">
+                                    <h1 class="-mt-12 text-xl sm:text-2xl text-secondary italic py-4 px-6 font-semibold bg-whity rounded-3xl shadow-2xl">CORE VALUES</h1>
+                                </div>
+                                <div class="py-4 flex items-center justify-evenly flex-wrap px-2 text-sm text-white space-x-1 space-y-2">
+                                    <p class="odd:bg-gradient-to-r from-[#108eb1] to-[#1e3a87] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Innovation</p>
+                                    <p class="odd:bg-gradient-to-r from-[#108eb1] to-[#1e3a87] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Integrity</p>
+                                    <p class="odd:bg-gradient-to-r from-[#108eb1] to-[#1e3a87] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Team Work</p>
+                                    <p class="odd:bg-gradient-to-r from-[#108eb1] to-[#1e3a87] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Excellence</p>
+                                    <p class="odd:bg-gradient-to-r from-[#108eb1] to-[#1e3a87] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Customer Focus</p>
+                                    <p class="odd:bg-gradient-to-r from-[#108eb1] to-[#1e3a87] even:bg-secondary py-3 px-6 rounded-3xl shadow-xl">Professionalism</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -299,14 +318,14 @@
                     <div class="bg-white rounded-3xl shadow-xl p-4 sm:px-8">
                         <div>
                             <div class="flex justify-start px-8 md:px-16">
-                                <h2 class="-mt-12 text-secondary italic py-4 px-6 font-semibold bg-white rounded-3xl shadow-xl">June Curated Opportunities</h2>
+                                <h2 class="-mt-12 text-secondary italic py-4 px-6 font-semibold bg-white rounded-3xl shadow-xl">More Related Opportunities</h2>
                             </div>
 
                             <!-- Posts -->
                             <div class="py-8 grid lg:grid-cols-4 gap-4">
                                 <!-- Post -->
                                 <a href="./article.html" class="bg-white flex flex-col shadow-xl rounded-3xl transition duration-200 transform hover:scale-105">
-                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/un.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
+                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/posts/typewriter.jpg)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
                                     </div>
                 
                                     <div class="flex flex-col space-y-2 p-4">
@@ -328,7 +347,7 @@
 
                                 <!-- Post -->
                                 <a href="./article.html" class="bg-white flex flex-col shadow-xl rounded-3xl transition duration-200 transform hover:scale-105">
-                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/un.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
+                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/posts/transmision.jpg)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
                                     </div>
                 
                                     <div class="flex flex-col space-y-2 p-4">
@@ -350,7 +369,7 @@
 
                                 <!-- Post -->
                                 <a href="./article.html" class="bg-white flex flex-col shadow-xl rounded-3xl transition duration-200 transform hover:scale-105">
-                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/un.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
+                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/posts/Mediamax-Digital.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
                                     </div>
                 
                                     <div class="flex flex-col space-y-2 p-4">
@@ -372,7 +391,7 @@
 
                                 <!-- Post -->
                                 <a href="./article.html" class="bg-white flex flex-col shadow-xl rounded-3xl transition duration-200 transform hover:scale-105">
-                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/un.png)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
+                                    <div class="py-24 rounded-t-3xl bg-center bg-cover" style="background-image: url(./assets/images/posts/logostics-Manager.jpg)" alt="Opportunities Meet Aspirations" title='Kenya Jobs | Opened Career'>
                                     </div>
                 
                                     <div class="flex flex-col space-y-2 p-4">
@@ -391,8 +410,20 @@
                                         </div>
                                     </div>
                                 </a>
+
+                                <div class="lg:col-span-4">
+                                    <div class="my-4 py-4 grad-to-br rounded-full max-w-sm mx-auto">
+                                        <div class="text-center">
+                                            <h3 class="text-white font-semibold">Oops! No related opportunities found!</h3>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <img src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif" alt="404 error Content Not Found" width="450px" class="rounded-3xl"/>
+                                    </div>
+                                </div>
 
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -428,128 +459,128 @@
         </div>
     </div>
 
-    <!-- Container -->
-    <main class="max-w-7xl mx-auto px-4">
-
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto px-2 pt-8 pb-5">
-                <div class="flex flex-col items-center xl:flex-row xl:justify-between">
-                    <div class="mb-6 xl:mb-0">
-                        <a href="#">
-                            <img src="./assets/images/logo.webp" class="h-52 rounded-3xl" alt="footer Logo" />
-                        </a>
-                    </div>
-                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                        <!-- Socials -->
-                        <div>
-                            <p class="mb-6 font-semibold text-primary uppercase">Follow us</p>
-                            <ul class="text-secondary font-medium">
-                                <li class="mb-4">
-                                    <a href="https://www.facebook.com/profile.php?id=61557428180809&mibextid=ZbWKwL"  target="_blank" class="hover:underline ">Facebook</a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="https://whatsapp.com/channel/0029VaXCVqH6mYPMoo4KUd0a"  target="_blank" class="hover:underline">WhatsApp Channel</a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="https://www.instagram.com/"  target="_blank" class="hover:underline ">Instagram</a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="https://x.com/OpenedCareer?t=gAU2SN7-fACE9GQgDJ3GbQ&s=09" target="_blank" class="hover:underline">X Page</a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="https://vm.tiktok.com/ZMM4aVmRP/"  target="_blank" class="hover:underline">TikTok</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/company/opened-career/"  target="_blank" class="hover:underline">LinkedIn</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Resources -->
-                        <div>
-                            <p class="mb-6 font-semibold text-primary uppercase">Resources</p>
-                            <ul class="text-secondary font-medium">
-                                <li class="mb-4">
-                                    <a href="./index.html" class="hover:underline">Home</a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="./pages.html" class="hover:underline">Jobs</a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="./pages.html" class="hover:underline">Internships</a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="./pages.html" class="hover:underline">International Jobs</a>
-                                </li>
-                                <li>
-                                    <a href="./about.html" class="hover:underline">About Us</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Legal -->
-                        <div>
-                            <p class="mb-6 font-semibold text-primary uppercase">Legal</p>
-                            <ul class="text-secondary font-medium">
-                                <li class="mb-4">
-                                    <a href="./index.html" class="hover:underline">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="./index.html" class="hover:underline">Terms &amp; Conditions</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto px-2 pt-8 pb-5">
+            <div class="flex flex-col items-center xl:flex-row xl:justify-between">
+                <div class="mb-6 xl:mb-0">
+                    <a href="#">
+                        <img src="./assets/images/logo.webp" class="h-52 rounded-3xl" alt="footer Logo" />
+                    </a>
                 </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <!-- Socials -->
+                    <div>
+                        <p class="mb-6 font-semibold text-primary uppercase">Follow us</p>
+                        <ul class="text-secondary font-medium">
+                            <li class="mb-4">
+                                <a href="https://www.facebook.com/profile.php?id=61557428180809&mibextid=ZbWKwL"  target="_blank" class="hover:underline ">Facebook</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="https://whatsapp.com/channel/0029VaXCVqH6mYPMoo4KUd0a"  target="_blank" class="hover:underline">WhatsApp Channel</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="https://www.instagram.com/"  target="_blank" class="hover:underline ">Instagram</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="https://x.com/OpenedCareer?t=gAU2SN7-fACE9GQgDJ3GbQ&s=09" target="_blank" class="hover:underline">X Page</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="https://vm.tiktok.com/ZMM4aVmRP/"  target="_blank" class="hover:underline">TikTok</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/opened-career/"  target="_blank" class="hover:underline">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <!-- Colored hr -->
-                <div class="flex flex-row w-full items-center my-6 lg:my-8">
-                    <div class="bg-primary h-0.5 md:h-1 w-1/4"></div>
-                    <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
-                    <div class="bg-primary h-0.5 md:h-1 w-1/4"></div>
-                    <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
-                </div>
-                
-                <!-- All Rights + Socials -->
-                <div class="flex items-center flex-col sm:flex-row sm:justify-between">
-                    <p class="text-secondary font-medium sm:text-center">© 2024 <a href="#" class="hover:underline">Opened Career™</a>. All Rights Reserved.</p>
+                    <!-- Resources -->
+                    <div>
+                        <p class="mb-6 font-semibold text-primary uppercase">Resources</p>
+                        <ul class="text-secondary font-medium">
+                            <li class="mb-4">
+                                <a href="./index.html" class="hover:underline">Home</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./pages.html" class="hover:underline">Jobs</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./pages.html" class="hover:underline">Internships</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./pages.html" class="hover:underline">International Jobs</a>
+                            </li>
+                            <li>
+                                <a href="./about.html" class="hover:underline">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <a href="https://www.facebook.com/profile.php?id=61557428180809&mibextid=ZbWKwL" target="_blank" class="transition duration-200 transform hover:scale-125">
-                            <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#4267B2' viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-                            <span class="sr-only">Facebook page</span>
-                        </a>
-                        <a href="https://whatsapp.com/channel/0029VaXCVqH6mYPMoo4KUd0a" target="_blank" class="transition duration-200 transform hover:scale-125">
-                            <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#128C7E' viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-                            <span class="sr-only">WhatsApp page</span>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="transition duration-200 transform hover:scale-125">
-                            <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#E1306C' viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                            <span class="sr-only">Instagram page</span>
-                        </a>
-                        <a href="https://x.com/OpenedCareer?t=gAU2SN7-fACE9GQgDJ3GbQ&s=09" target="_blank" class="transition duration-200 transform hover:scale-125">
-                            <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#262626' viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-                            <span class="sr-only">X page</span>
-                        </a>
-                        <a href="https://vm.tiktok.com/ZMM4aVmRP/" target="_blank" class="transition duration-200 transform hover:scale-125">
-                            <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#262626' viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
-                            <span class="sr-only">TikTok</span>
-                        </a>
-                        <a href="https://www.linkedin.com/company/opened-career/" target="_blank" class="transition duration-200 transform hover:scale-125">
-                            <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#0a66c2' viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
+                    <!-- Legal -->
+                    <div>
+                        <p class="mb-6 font-semibold text-primary uppercase">Legal</p>
+                        <ul class="text-secondary font-medium">
+                            <li class="mb-4">
+                                <a href="./index.html" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-    </main>
+
+            <!-- Colored hr -->
+            <div class="flex flex-row w-full items-center my-6 lg:my-8">
+                <div class="bg-primary h-0.5 md:h-1 w-1/4"></div>
+                <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
+                <div class="bg-primary h-0.5 md:h-1 w-1/4"></div>
+                <div class="bg-gold h-0.5 md:h-1 w-1/4"></div>
+            </div>
+            
+            <!-- All Rights + Socials -->
+            <div class="flex items-center flex-col sm:flex-row sm:justify-between">
+                <p class="text-secondary font-medium sm:text-center">© 2024 <a href="#" class="hover:underline">Opened Career™</a>. All Rights Reserved.</p>
+
+                <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                    <a href="https://www.facebook.com/profile.php?id=61557428180809&mibextid=ZbWKwL" target="_blank" class="transition duration-200 transform hover:scale-125">
+                        <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#4267B2' viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029VaXCVqH6mYPMoo4KUd0a" target="_blank" class="transition duration-200 transform hover:scale-125">
+                        <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#128C7E' viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                        <span class="sr-only">WhatsApp page</span>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="transition duration-200 transform hover:scale-125">
+                        <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#E1306C' viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        <span class="sr-only">Instagram page</span>
+                    </a>
+                    <a href="https://x.com/OpenedCareer?t=gAU2SN7-fACE9GQgDJ3GbQ&s=09" target="_blank" class="transition duration-200 transform hover:scale-125">
+                        <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#262626' viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                        <span class="sr-only">X page</span>
+                    </a>
+                    <a href="https://vm.tiktok.com/ZMM4aVmRP/" target="_blank" class="transition duration-200 transform hover:scale-125">
+                        <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#262626' viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                        <span class="sr-only">TikTok</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/opened-career/" target="_blank" class="transition duration-200 transform hover:scale-125">
+                        <svg xmlns="http://www.w3.org/2000/svg" width='1rem' fill='#0a66c2' viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000, // Animation duration
+            delay: 300, // Animation delay
+            once: true // Only animate elements once
+        });
     </script>
 
 </body>
