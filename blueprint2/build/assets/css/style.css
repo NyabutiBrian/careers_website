@@ -2291,6 +2291,10 @@ html {
   z-index: 1;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -2456,12 +2460,20 @@ html {
   list-style-position: inside;
 }
 
+.list-outside {
+  list-style-position: outside;
+}
+
 .list-\[decimal\] {
   list-style-type: decimal;
 }
 
 .list-\[lower-alpha\] {
   list-style-type: lower-alpha;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -2831,6 +2843,10 @@ html {
   padding-inline-end: 1rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -2979,6 +2995,7 @@ body {
   min-height: 100dvh;
   font-family: Jost;
   background-color: #DFE3EE;
+  overflow-x: hidden;
 }
 
 .grad-to-br {
